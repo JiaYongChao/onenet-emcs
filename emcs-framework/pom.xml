@@ -35,6 +35,13 @@
             <artifactId>druid-spring-boot-starter</artifactId>
         </dependency>
 
+        <!-- ActiveMQ -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-activemq</artifactId>
+        </dependency>
+
+
         <!-- 验证码 -->
         <dependency>
             <groupId>pro.fessional</groupId>

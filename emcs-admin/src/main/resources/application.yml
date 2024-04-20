@@ -72,6 +72,13 @@ spring:
     restart:
       # 热部署开关
       enabled: true
+  #消息队列
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    packages:
+      trust-all: true
+    user: admin
+    password: admin
 
 # MyBatis
 mybatis:

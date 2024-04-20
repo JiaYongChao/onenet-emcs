@@ -1,5 +1,6 @@
 package com.onenet.emcs.web.controller.device;
 
+import com.alibaba.fastjson.JSON;
 import com.onenet.emcs.common.utils.onenet.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -55,7 +56,13 @@ public class DeviceController {
         if (obj != null){
             boolean dataRight = Util.checkSignature(obj, token);
             if (dataRight){
-                logger.info("data receive: content" + obj.toString());
+                logger.info("data receive: content{}", obj.toString());
+                JSONObject json = JSON.toJSON(obj.toString());
+                //处理设备上下线消息
+
+                //处理设备数据消息
+
+
             }else {
                 logger.info("data receive: signature error");
             }
